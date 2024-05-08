@@ -8,7 +8,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from langchain.llms.huggingface_hub import HuggingFaceHub
 import os
-os.environ["HUGGINGFACEHUB_API_TOKEN"]="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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"]="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"
 def get_pdf_text(pdf_docs):
     text=""
     for pdf in pdf_docs:
