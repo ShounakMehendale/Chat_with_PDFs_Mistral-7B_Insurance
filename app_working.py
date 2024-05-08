@@ -30,7 +30,7 @@ def get_vector_database(text_chunks):
 def get_conversation_chain(vectordb):
     llm = HuggingFaceHub(
     repo_id="mistralai/Mistral-7B-Instruct-v0.1",
-    model_kwargs={"temperature": 0.9, "max_tokens":2000}
+    model_kwargs={"temperature": 0.9, "max_tokens":1000}
 )
     memory=ConversationBufferMemory(memory_key='chat_history',return_messages=True)
     conversation_chain=ConversationalRetrievalChain.from_llm(
